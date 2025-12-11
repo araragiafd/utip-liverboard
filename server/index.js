@@ -16,10 +16,18 @@ app.use('/api/livers', require('./routes/livers'));
 app.use('/api/posts', require('./routes/posts'));
 app.use('/api/admin', require('./routes/admin'));
 
-// React アプリケーションの配信
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+// 本番環境では静的ファイルを配信
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+  
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+} else {
+  app.get('/', (req, res) => {
+    res.json({ message: 'utip ライバー掲示板 API サーバー', status: 'running' });
+  });
+}
 
 // データベース初期化
 db.init().then(() => {

@@ -21,8 +21,9 @@ const Home: React.FC = () => {
 
   const fetchLivers = async () => {
     try {
-      const response = await axios.get('/api/livers');
-      setLivers(response.data);
+      const response = await fetch('/utip-liverboard/data/livers.json');
+      const data = await response.json();
+      setLivers(data);
     } catch (error) {
       console.error('ライバー取得エラー:', error);
     } finally {

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "山田花子",
+    "avatar": "/utip-liverboard/images/avatar1.jpg",
+    "description": "ゲーム配信が得意なライバーです",
+    "twitter_url": "https://twitter.com/yamada",
+    "youtube_url": "https://youtube.com/yamada"
+  },
+  {
+    "id": 2,
+    "name": "田中太郎",
+    "avatar": "/utip-liverboard/images/avatar2.jpg",
+    "description": "歌配信メインのライバーです",
+    "twitter_url": "https://twitter.com/tanaka",
+    "youtube_url": "https://youtube.com/tanaka"
+  },
+  {
+    "id": 3,
+    "name": "佐藤美咲",
+    "avatar": "/utip-liverboard/images/avatar3.jpg",
+    "description": "雑談配信が人気のライバーです",
+    "twitter_url": "https://twitter.com/sato",
+    "youtube_url": "https://youtube.com/sato"
+  }
+]

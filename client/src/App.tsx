@@ -8,7 +8,7 @@ import CreatePost from './pages/CreatePost';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/utip-liverboard">
       <div className="min-h-screen">
         {/* 背景のアニメーション要素 */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
