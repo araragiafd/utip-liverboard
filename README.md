@@ -1,6 +1,6 @@
 # 🎭 utip ライバー掲示板
 
-[![CI/CD Pipeline](https://github.com/YOUR_USERNAME/utip-liverboard/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/utip-liverboard/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/araragiafd/utip-liverboard/actions/workflows/ci.yml/badge.svg)](https://github.com/araragiafd/utip-liverboard/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ライバー事務所utipの所属ライバー専用掲示板サイトです。

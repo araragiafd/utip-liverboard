@@ -15,7 +15,7 @@ utip ライバー掲示板プロジェクトへのコントリビューション
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/YOUR_USERNAME/utip-liverboard.git
+git clone https://github.com/araragiafd/utip-liverboard.git
 cd utip-liverboard
 
 # 依存関係をインストール
@@ -33,11 +33,11 @@ npm run dev
 
 ## 🐛 バグ報告
 
-バグを見つけた場合は、[Issues](https://github.com/YOUR_USERNAME/utip-liverboard/issues)で報告してください。
+バグを見つけた場合は、[Issues](https://github.com/araragiafd/utip-liverboard/issues)で報告してください。
 
 ## 💡 機能提案
 
-新機能のアイデアがある場合は、まず[Discussions](https://github.com/YOUR_USERNAME/utip-liverboard/discussions)で議論しましょう。
+新機能のアイデアがある場合は、まず[Discussions](https://github.com/araragiafd/utip-liverboard/discussions)で議論しましょう。
 
 ## 📄 ライセンス
 
