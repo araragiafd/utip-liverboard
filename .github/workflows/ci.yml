@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -21,18 +21,21 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: client/package-lock.json
     
-    - name: Install client dependencies
-      run: cd client && npm install
+    - name: Install dependencies
+      run: cd client && npm ci
     
-    - name: Build React app
+    - name: Build
       run: cd client && npm run build
       env:
+        CI: false
         PUBLIC_URL: /utip-liverboard
     
-    - name: Deploy to GitHub Pages
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./client/build
-        cname: false
