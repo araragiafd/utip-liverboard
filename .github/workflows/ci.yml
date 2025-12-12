@@ -31,8 +31,8 @@ jobs:
     
     - name: Install dependencies
       run: |
-        npm install
-        cd client && npm install
+        npm ci --only=production || npm install
+        cd client && npm ci --only=production || npm install
     
     - name: Build React app
       run: cd client && npm run build
