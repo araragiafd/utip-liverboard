@@ -4,31 +4,8 @@
   "description": "ライバー事務所utip 掲示板サイト",
   "main": "server/index.js",
   "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "server:dev": "nodemon server/index.js",
-    "client:dev": "cd client && npm start",
     "build": "cd client && npm run build",
-    "start": "node server/index.js",
-    "install:all": "npm install && cd client && npm install",
-    "network": "concurrently \"npm run server:dev\" \"cd client && BROWSER=none HOST=0.0.0.0 npm start\"",
-    "ip": "node get-ip.js",
-    "public": "concurrently \"npm run dev\" \"node ngrok-setup.js\"",
-    "ngrok": "node ngrok-setup.js",
-    "cloudflare": "node cloudflare-setup.js",
-    "tunnel": "concurrently \"npm run dev\" \"node cloudflare-setup.js\"",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "setup-github": "node setup-github.js"
+    "install:all": "npm install && cd client && npm install"
   },
-  "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "sqlite3": "^5.1.6",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "multer": "^1.4.5-lts.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1",
-    "concurrently": "^8.2.2"
-  }
+  "devDependencies": {}
 }
