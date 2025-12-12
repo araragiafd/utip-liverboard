@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "ライバー事務所utip 掲示板サイト",
   "main": "server/index.js",
-  "scripts": {
-    "build": "cd client && npm run build",
-    "install:all": "npm install && cd client && npm install"
-  },
+  "scripts": {},
   "devDependencies": {}
 }
