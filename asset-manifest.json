@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/utip-liverboard/static/css/main.878f0a1f.css",
+    "main.js": "/utip-liverboard/static/js/main.5c0be4ca.js",
+    "index.html": "/utip-liverboard/index.html",
+    "main.878f0a1f.css.map": "/utip-liverboard/static/css/main.878f0a1f.css.map",
+    "main.5c0be4ca.js.map": "/utip-liverboard/static/js/main.5c0be4ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.878f0a1f.css",
+    "static/js/main.5c0be4ca.js"
+  ]
+}
